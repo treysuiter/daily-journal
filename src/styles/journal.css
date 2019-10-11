@@ -8,7 +8,5 @@ fieldset {
     flex-direction: column;
 }
 button {
-    width: 25%;
-    /* flex-direction: column;
-    flex-basis: 25%; */
+    flex-basis;: 25%;
 }
