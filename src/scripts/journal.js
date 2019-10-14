@@ -1,13 +1,3 @@
-/*
-    Define the keys and value for a JavaScript object that
-    represents a journal entry about what you learned today
-*/
-// const journalEntry = {
-//     date: "",
-//     concepts: "",
-//     entry: "",
-//     mood: ""
-// }
 
 const journalEntry = {
 
@@ -34,7 +24,6 @@ const journalEntries = [
 ]
 
 const makeJournalEntryComponent = (journalEntry) => {
-    // Create your own HTML structure for a journal entry
     return `
     <div>
         <h1>${journalEntry.concept}</h1>
@@ -43,19 +32,14 @@ const makeJournalEntryComponent = (journalEntry) => {
     </div> `
 }
 
-
+const journalContainer = document.querySelector("#entryLog")
 
 const renderJournalEntries = (entries) => {
     let journalHTML = ""
     for (let i = 0; i < entries.length; i++) {
         journalHTML += makeJournalEntryComponent(entries[i])
     }
-    return journalHTML
+    journalContainer.innerHTML = journalHTML
 }
 
-journalHTML = renderJournalEntries(journalEntries)
-console.log(journalHTML)
-const journalContainer = document.querySelector("#entryLog")
-journalContainer.innerHTML = journalHTML
-
-
+renderJournalEntries(journalEntries)
