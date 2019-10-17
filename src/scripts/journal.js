@@ -8,21 +8,6 @@ const journalEntry = {
 
 }
 
-const journalEntries = [
-    {
-        date: "07/24/2018",
-        concept: "Array methods",
-        entry: "Learned about arrays",
-        mood: "Maximum"
-    },
-    {
-        date: "07/24/2018",
-        concept: "Array methods",
-        entry: "Learned about arrays",
-        mood: "Maximum"
-    }
-]
-
 const makeJournalEntryComponent = (journalEntry) => {
     return `
     <div>
@@ -42,4 +27,12 @@ const renderJournalEntries = (entries) => {
     journalContainer.innerHTML = journalHTML
 }
 
-renderJournalEntries(journalEntries)
+
+fetch("http://127.0.0.1:8088/entries") // Fetch from the API
+    .then(entries => entries.json())  // Parse as JSON
+    .then(parsedEntries => {
+        console.log(parsedEntries)
+        const journalEntries = parsedEntries
+        renderJournalEntries(journalEntries)
+        // What should happen when we finally have the array?
+    })
