@@ -7,11 +7,15 @@ const journalEntry = {
 
 }
 
-const makeJournalEntryComponent = (journalEntry) => {
-    return `
+const entryHTML = {
+    makeJournalEntryComponent: (journalEntry) => {
+        return `
     <div>
         <h1>${journalEntry.concept}</h1>
         <p>${journalEntry.entry}</p>
         <p>${journalEntry.date}</p>
     </div> `
+    }
 }
+
+export default entryHTML

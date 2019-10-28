@@ -1,5 +1,8 @@
+import entriesDOM from "./entriesDOM.js"
 
-API.getJournalEntries().then(renderJournalEntries)
+import data from "./data.js"
+
+data.getJournalEntries().then(entriesDOM.renderJournalEntries)
 
 
 // const journalEntry = {
