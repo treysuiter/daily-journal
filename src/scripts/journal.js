@@ -4,6 +4,19 @@ import data from "./data.js"
 
 data.getJournalEntries().then(entriesDOM.renderJournalEntries)
 
+document.querySelector("#recordEntry").addEventListener("click", () => {
+
+ const journalDate = document.querySelector("#journalDate")
+ const concepts = document.querySelector("#concepts")
+ const journalEntry = document.querySelector("#journalEntry")
+ const mood = document.querySelector("#mood")
+
+console.log(journalDate.value, concepts.value, journalEntry.value, mood.value)
+
+}
+
+)
+
 
 // const journalEntry = {
 
