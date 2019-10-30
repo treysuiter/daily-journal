@@ -6,7 +6,7 @@ data.getJournalEntries().then(entriesDOM.renderJournalEntries)
 
 document.querySelector("#recordEntry").addEventListener("click", () => {
 
-    const regex = /^[a-z0-9/s/(/)/{/}/:/;]/i
+    const regex = /^[a-z0-9/s/(/)/{/}/:/;/.]/i
     if (regex.test(concepts.value)) {
         const journalDate = document.querySelector("#journalDate")
         const concepts = document.querySelector("#concepts")
@@ -25,7 +25,8 @@ document.querySelector("#recordEntry").addEventListener("click", () => {
     console.log(journalDate.value, concepts.value, journalEntry.value, mood.value)
     console.log(newJournalEntry)
     data.saveJournalEntry(newJournalEntry)
-    data.getJournalEntries().then(entriesDOM.renderJournalEntries)
+    .then(data.getJournalEntries)
+    .then(entriesDOM.renderJournalEntries)
 }
 )
 

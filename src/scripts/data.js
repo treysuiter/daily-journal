@@ -1,10 +1,11 @@
+
 const API = {
     getJournalEntries() {
         return fetch("http://localhost:8088/entries")
             .then(response => response.json())
     },
     saveJournalEntry(journalEntry) {
-        fetch("http://localhost:8088/entries", {
+         return fetch("http://localhost:8088/entries", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -16,6 +17,7 @@ const API = {
 }
 
 export default API
+
 // fetch("http://127.0.0.1:8088/entries") // Fetch from the API
 //     .then(entries => entries.json())  // Parse as JSON
 //     .then(parsedEntries => {
