@@ -5,16 +5,21 @@ body {
 form {
     display: flex;
     flex-direction: column;
+    width: 500px;
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
     margin: 3px;
-    width: 500px;
+    height: 100px;
 }
 button {
     width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 110%;
 }
 
 fieldset {
@@ -26,4 +31,30 @@ fieldset {
     border: solid 1px black;
     margin: 3px;
     padding: 10px;
+    width: 300px;
+}
+
+#journalEntry {
+    height: 80px;
+    width: 400px;
+}
+
+#entryLog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#mood {
+    text-justify: center;
+    font-size: 110%;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+#concepts {
+    width: 400px;
+    height: 40px;
 }

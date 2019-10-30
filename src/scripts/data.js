@@ -13,6 +13,9 @@ const API = {
             body: JSON.stringify(journalEntry)
         }
         )
+    },
+    getAndSaveEntries(journalEntry) {
+        this.getJournalEntries.then(this.saveJournalEntry(journalEntry))
     }
 }
 
