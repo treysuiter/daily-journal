@@ -1,11 +1,12 @@
 
 import entryHTML from "./entryComponent.js"
 
-const journalContainer = document.querySelector("#entryLog")
+
 
 const entriesDOM = {
 
     renderJournalEntries: (entries) => {
+        const journalContainer = document.querySelector("#entryLog")
         let journalHTML = ""
         for (let i = 0; i < entries.length; i++) {
             journalHTML += entryHTML.makeJournalEntryComponent(entries[i])
