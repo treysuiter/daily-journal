@@ -25,6 +25,23 @@ export default {
                 </select>
             </fieldset>
             <button type="button" id="recordEntry">Record Journal Entry</button>
+            <fieldset class="moodFilter">
+
+                <legend>
+                Filter Journal Entries by Mood
+                </legend>
+                <div class="radioButtons">
+                <input type="radio" name="moods" id="maximum" value="maximum">
+                <label for "maximum">MAX</label>
+
+                <input type="radio" name="moods" id="minimum" value="medium">
+                <label for "maximum">MED</label>
+
+                <input type="radio" name="moods" id="minimum" value="minimum">
+                <label for "maximum">MIN</label>
+                </div>  
+            </fieldset>
+
         </form>
         <article id="entryLog">
         </article>`
