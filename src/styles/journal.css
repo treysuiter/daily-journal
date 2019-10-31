@@ -1,5 +1,8 @@
 body {
     font-family: 'Raleway', sans-serif;
+    justify-self: center;
+    width:1000px;
+    align-self: auto;
 }
 
 form {
@@ -17,9 +20,10 @@ fieldset {
 button {
     width: 200px;
     height: 50px;
-    border-radius: 25px;
+    border-radius: 5px;
     font-weight: bold;
     font-size: 110%;
+    margin: 10px;
 }
 
 fieldset {
@@ -40,6 +44,7 @@ fieldset {
 }
 
 #entryLog {
+    justify-content: space-between;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

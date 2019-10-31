@@ -14,6 +14,7 @@ const entryHTML = {
         <h1>${journalEntry.concept}</h1>
         <p>${journalEntry.entry}</p>
         <p>${journalEntry.date}</p>
+        <p>Mood: ${journalEntry.mood}
     </div> `
     }
 }
