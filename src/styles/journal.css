@@ -1,21 +1,25 @@
-body {
+/* body {
     font-family: 'Raleway', sans-serif;
-    justify-self: center;
-    width:1000px;
-    align-self: auto;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiFbqTo0EU0uDwKbCuJIn9sJS7mIjIwSkTcN5zmXvdWictS3a7&s");
 }
 
 form {
     display: flex;
     flex-direction: column;
     width: 500px;
+    margin: auto;
+    width:50%;
+    
 }
 
 fieldset {
     display: flex;
     flex-direction: column;
-    margin: 3px;
     height: 100px;
+    background-color: lightblue;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
 }
 button {
     width: 200px;
@@ -26,8 +30,18 @@ button {
     margin: 10px;
 }
 
-fieldset {
-    background-color: lightblue;
+legend {
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+h1 {
+    background-color: white;
+    width: 250px;
+    padding:5px;
+    border-radius: 5px;
+    margin: auto;
 }
 
 .entry {
@@ -36,22 +50,32 @@ fieldset {
     margin: 3px;
     padding: 10px;
     width: 300px;
+    border-radius: 5px;
 }
 
 .moodFilter {
     height: 50px;
 }
 
+.radioButtons {
+    padding: 5px;
+}
+
 #journalEntry {
-    height: 80px;
-    width: 400px;
+    flex-basis: 75%;
 }
 
 #entryLog {
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+#moodFieldset {
+    display: flex;
+    flex-direction: column;
+    
 }
 
 #mood {
@@ -62,8 +86,4 @@ fieldset {
     border-radius: 5px;
     width: 200px;
 }
-
-#concepts {
-    width: 400px;
-    height: 40px;
-}
+ */

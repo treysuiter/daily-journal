@@ -53,5 +53,5 @@ radioButtons.forEach(button =>
             })
             entriesDOM.renderJournalEntries(newArray)
             
-        })
+        }) 
     }))
