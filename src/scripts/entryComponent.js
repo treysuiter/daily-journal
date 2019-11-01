@@ -11,6 +11,7 @@ const entryHTML = {
         <button class="allDeleteButtons" id="deleteButton--${journalEntry.id} ">
             Delete
         </button>
+        <button class="allEditButtons" id="editButton--${journalEntry.id} ">Edit</button>
     </div> `
     }
 }

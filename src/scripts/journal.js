@@ -14,6 +14,7 @@ data.getJournalEntries()
 .then(eventListeners.recordEntry)
 .then(eventListeners.moodFilter)
 .then(eventListeners.delete)
+.then(eventListeners.edit)
 
 
 

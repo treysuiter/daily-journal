@@ -1,11 +1,13 @@
 export default {
 
-//!I done turned this into something pretty
+    //!I done turned this into something pretty
 
-    buildForm: () => {
+    buildForm: () =>
+
         document.querySelector(".mainContainer").innerHTML = /*html*/`
         <h1 class="mx-auto">Daily Journal</h1>
         <form class=" bs4-d-flex flex-column mx-auto bd-highlight mb-3 w-50 p-3" action="">
+        <input id="hiddenID" value="" />
             <fieldset>
                 <label for "journalDate">Date of Entry</label>
                 <input class="form-control" type="date" name="journalDate" id="journalDate">
@@ -26,7 +28,7 @@ export default {
                     <option value="minimum">Minimum</option>
                 </select>
             </fieldset>
-            <button class="btn btn-outline-primary" type="button" id="recordEntry">Record Journal Entry</button>
+            <button class="btn btn-outline-primary" type="button" id="recordEntry">Save</button>
             <fieldset class="moodFilter">
 
                 <legend>
@@ -50,5 +52,4 @@ export default {
         </form>
         <article class="d-flex flex-wrap" id="entryLog">
         </article>`
-    }
 }
