@@ -2,8 +2,8 @@ export default {
 
     buildForm: () => {
         document.querySelector(".mainContainer").innerHTML = `
-        <h1>Daily Journal</h1>
-        <form class="d-flex flex-column bd-highlight mb-3 class="form-group" action="">
+        <h1 class="mx-auto">Daily Journal</h1>
+        <form class="d-flex flex-column mx-auto bd-highlight mb-3 w-50 p-3" action="">
             <fieldset>
                 <label for "journalDate">Date of Entry</label>
                 <input class="form-control" type="date" name="journalDate" id="journalDate">
@@ -30,20 +30,23 @@ export default {
                 <legend>
                 Filter Journal Entries by Mood
                 </legend>
-                <div class="btn-group btn-group-toggle" data-toggle="buttons" class="radioButtons">
-                <input class="form-check" type="radio" name="moods" id="maximum" value="maximum">
+                
+                <div class="radioButtons">
+
+                <input type="radio" name="moods" id="maximum" value="maximum">
                 <label for "maximum">MAX</label>
 
-                <input class="form-check" type="radio" name="moods" id="minimum" value="medium">
+                <input type="radio" name="moods" id="minimum" value="medium">
                 <label for "maximum">MED</label>
 
-                <input class="form-check" type="radio" name="moods" id="minimum" value="minimum">
+                <input type="radio" name="moods" id="minimum" value="minimum">
                 <label for "maximum">MIN</label>
+
                 </div>  
             </fieldset>
 
         </form>
-        <article class="d-flex flex-wrap"id="entryLog">
+        <article class="d-flex flex-wrap" id="entryLog">
         </article>`
     }
 }
