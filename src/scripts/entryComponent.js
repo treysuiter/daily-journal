@@ -15,7 +15,10 @@ const entryHTML = {
         <hr>
         <p>${journalEntry.entry}</p>
         <p>${journalEntry.date}</p>
-        <p>Mood: ${journalEntry.mood}
+        <p>Mood: ${journalEntry.mood}</p>
+        <button class="allDeleteButtons" id="deleteButton--${journalEntry.id} ">
+            Delete
+        </button>
     </div> `
     }
 }

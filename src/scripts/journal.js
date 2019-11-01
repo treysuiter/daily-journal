@@ -2,9 +2,15 @@ import entriesDOM from "./entriesDOM.js"
 import form from "./formFields.js"
 import data from "./data.js"
 
+//Builds initial form
+
 form.buildForm()
 
+//Fetches journal data and places it on the DOM
+
 data.getJournalEntries().then(entriesDOM.renderJournalEntries)
+
+//Creates event listener to added fields' input to API
 
 document.querySelector("#recordEntry").addEventListener("click", () => {
 
@@ -33,6 +39,8 @@ document.querySelector("#recordEntry").addEventListener("click", () => {
     }
 })
 
+//Create radio buttons to filter entires by mood
+
 const radioButtons = document.getElementsByName("moods")
 
 radioButtons.forEach(button =>
@@ -41,7 +49,7 @@ radioButtons.forEach(button =>
         const myMood = event.target.value
 
         data.getJournalEntries().then(response => {
-    
+
             const newArray = response.filter(selectedMood => {
 
                 let match = false
@@ -52,6 +60,24 @@ radioButtons.forEach(button =>
                 return match
             })
             entriesDOM.renderJournalEntries(newArray)
-            
-        }) 
+
+        })
     }))
+
+//Creates event listener for delete button then rebuilds the DOM
+
+const deleteButtons = document.querySelector("#entryLog")
+
+deleteButtons.addEventListener("click", event => {
+    if (event.target.id.startsWith("deleteButton--")) {
+        const entryToDelete = event.target.id.split("--")[1]
+
+        data.deleteEntry(entryToDelete)
+        .then(data.getJournalEntries)
+        .then(entriesDOM.renderJournalEntries)
+    }
+})
+
+
+
+

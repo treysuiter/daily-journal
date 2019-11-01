@@ -5,7 +5,7 @@ const API = {
             .then(response => response.json())
     },
     saveJournalEntry(journalEntry) {
-         return fetch("http://localhost:8088/entries", {
+        return fetch("http://localhost:8088/entries", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -16,7 +16,15 @@ const API = {
     },
     getAndSaveEntries(journalEntry) {
         this.getJournalEntries.then(this.saveJournalEntry(journalEntry))
+    },
+    deleteEntry(entryID) {
+        console.log(entryID)
+        return fetch(`http://localhost:8088/entries/${entryID}`, {
+            method: "DELETE"
+        })
+            .then(response => response.json())
     }
+
 }
 
 export default API

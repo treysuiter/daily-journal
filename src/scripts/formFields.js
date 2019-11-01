@@ -1,9 +1,11 @@
 export default {
 
+//!I done turned this into something pretty
+
     buildForm: () => {
-        document.querySelector(".mainContainer").innerHTML = `
+        document.querySelector(".mainContainer").innerHTML = /*html*/`
         <h1 class="mx-auto">Daily Journal</h1>
-        <form class="d-flex flex-column mx-auto bd-highlight mb-3 w-50 p-3" action="">
+        <form class=" bs4-d-flex flex-column mx-auto bd-highlight mb-3 w-50 p-3" action="">
             <fieldset>
                 <label for "journalDate">Date of Entry</label>
                 <input class="form-control" type="date" name="journalDate" id="journalDate">
