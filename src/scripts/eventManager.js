@@ -1,8 +1,11 @@
+import data from "./data.js"
+import entriesDOM from "./entriesDOM.js"
+
 const eventListeners = {
 
 //Creates event listener to added fields' input to API
 recordEntry() {
-    
+
 document.querySelector("#recordEntry").addEventListener("click", () => {
 
     const journalDate = document.querySelector("#journalDate")

@@ -7,12 +7,12 @@ import eventListeners from "./eventManager.js"
 
 form.buildForm()
 
-//Fetches journal data and places it on the DOM
+//Fetches journal data and places it on the DOM then adds event listeners
 
 data.getJournalEntries().then(entriesDOM.renderJournalEntries)
-eventListeners.recordEntry()
-eventListeners.moodFilter()
-eventListeners.delete()
+.then(eventListeners.recordEntry)
+.then(eventListeners.moodFilter)
+.then(eventListeners.delete)
 
 
 

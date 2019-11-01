@@ -1,27 +1,6 @@
 {
   "entries": [
     {
-      "date": "",
-      "concept": "",
-      "entry": "dfiughdiufg;dfigudihfg",
-      "mood": "maximum",
-      "id": 10
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "",
-      "mood": "maximum",
-      "id": 14
-    },
-    {
-      "date": "2019-10-22",
-      "concept": "KILL ALL",
-      "entry": "DESTROY",
-      "mood": "minimum",
-      "id": 16
-    },
-    {
       "date": "2019-10-16",
       "concept": "manic depression",
       "entry": "usless death",
@@ -29,39 +8,11 @@
       "id": 17
     },
     {
-      "date": "2019-10-15",
-      "concept": "no",
-      "entry": "die",
-      "mood": "minimum",
-      "id": 19
-    },
-    {
       "date": "2019-10-13",
       "concept": "kill puppies",
       "entry": "booger",
       "mood": "minimum",
       "id": 20
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "",
-      "mood": "maximum",
-      "id": 23
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "",
-      "mood": "maximum",
-      "id": 24
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "",
-      "mood": "maximum",
-      "id": 25
     },
     {
       "date": "2019-10-19",
@@ -657,6 +608,13 @@
       "entry": "i did it",
       "mood": "maximum",
       "id": 113
+    },
+    {
+      "date": "2019-11-02",
+      "concept": "new entry",
+      "entry": "just cuz",
+      "mood": "minimum",
+      "id": 114
     }
   ]
 }
