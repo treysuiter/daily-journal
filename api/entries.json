@@ -1,95 +1,11 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "07/98/2018",
-      "concept": "Array methods",
-      "entry": "Learned about arrays",
-      "mood": "Maximum"
-    },
-    {
-      "date": "2019-10-17",
-      "concept": "nope",
-      "entry": "ok",
-      "mood": "minimum",
-      "id": 2
-    },
-    {
-      "date": "2019-10-10",
-      "concept": "blah",
-      "entry": "hahaha",
-      "mood": "minimum",
-      "id": 3
-    },
-    {
-      "date": "2019-10-24",
-      "concept": "Stuff and things",
-      "entry": "oh shit it worked",
-      "mood": "maximum",
-      "id": 4
-    },
-    {
-      "date": "2019-10-02",
-      "concept": "rockin",
-      "entry": "i rocked",
-      "mood": "medium",
-      "id": 5
-    },
-    {
-      "date": "2019-10-30",
-      "concept": "WORK PLS",
-      "entry": "CMOM MAN!!!",
-      "mood": "maximum",
-      "id": 6
-    },
-    {
-      "date": "2019-10-28",
-      "concept": "DO THE THING",
-      "entry": "PLS DO THING",
-      "mood": "medium",
-      "id": 7
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "",
-      "mood": "maximum",
-      "id": 8
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "",
-      "mood": "maximum",
-      "id": 9
-    },
-    {
       "date": "",
       "concept": "",
       "entry": "dfiughdiufg;dfigudihfg",
       "mood": "maximum",
       "id": 10
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "vdjkfvjsfv",
-      "mood": "maximum",
-      "id": 11
-    },
-    {
-      "date": "2019-10-02",
-      "concept": "fadfgdfg",
-      "entry": "dfgdfgdsfg",
-      "mood": "minimum",
-      "id": 12
-    },
-    {
-      "date": "2019-10-09",
-      "concept": "THIS BETTER WORK",
-      "entry": "OR RYAN I S DEDEDDED",
-      "mood": "medium",
-      "id": 13
     },
     {
       "date": "",
@@ -139,20 +55,6 @@
       "entry": "booger",
       "mood": "minimum",
       "id": 20
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "",
-      "mood": "maximum",
-      "id": 21
-    },
-    {
-      "date": "2019-10-21",
-      "concept": "no one is alive",
-      "entry": "zombie Tiffany",
-      "mood": "minimum",
-      "id": 22
     },
     {
       "date": "",
@@ -219,13 +121,6 @@
     },
     {
       "date": "2019-10-05",
-      "concept": "more bullshit",
-      "entry": "nened money",
-      "mood": "maximum",
-      "id": 32
-    },
-    {
-      "date": "2019-10-05",
       "concept": "eating food",
       "entry": "food was ate",
       "mood": "maximum",
@@ -279,13 +174,6 @@
       "entry": "dead",
       "mood": "minimum",
       "id": 40
-    },
-    {
-      "date": "2019-10-08",
-      "concept": "one more time",
-      "entry": "with feeling",
-      "mood": "maximum",
-      "id": 41
     },
     {
       "date": "2019-10-19",
@@ -771,11 +659,11 @@
       "id": 110
     },
     {
-      "date": "2019-10-16",
-      "concept": "stuff",
-      "entry": "blah",
-      "mood": "maximum",
-      "id": 111
+      "date": "2019-11-02",
+      "concept": "will this be a new number",
+      "entry": "will see",
+      "mood": "minimum",
+      "id": 112
     }
   ]
 }
