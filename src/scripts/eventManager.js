@@ -33,6 +33,7 @@ document.querySelector("#recordEntry").addEventListener("click", () => {
     }
 })
 },
+
 //Create radio buttons with event listeners to filter entires by mood
 moodFilter() {
 
@@ -59,6 +60,7 @@ radioButtons.forEach(button =>
         })
     }))
 },
+
 //Creates event listener for delete button then rebuilds the DOM
 
 delete() {
