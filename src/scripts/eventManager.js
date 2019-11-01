@@ -10,28 +10,45 @@ const eventListeners = {
 
         saveButton.addEventListener("click", () => {
 
-            const journalDate = document.querySelector("#journalDate")
-            const concepts = document.querySelector("#concepts")
-            const journalEntry = document.querySelector("#journalEntry")
-            const mood = document.querySelector("#mood")
+            const hiddenEntryID = document.querySelector("#hiddenID")
 
-            const regex = /[^a-z0-9\s\(\)\{\}\:\;\.]/i
+            console.log(hiddenEntryID.value)
 
-            if (!regex.test(journalEntry.value) && journalEntry.value && !regex.test(concepts.value) && concepts.value) {
-                const newJournalEntry = {
-                    "date": journalDate.value,
-                    "concept": concepts.value,
-                    "entry": journalEntry.value,
-                    "mood": mood.value
-                }
+            if (hiddenEntryID !== "") {
 
-                data.saveJournalEntry(newJournalEntry)
+                data.editEntry(hiddenEntryID.value)
                     .then(data.getJournalEntries)
                     .then(entriesDOM.renderJournalEntries)
+                    .then(eventListeners.recordEntry)
+                    .then(eventListeners.moodFilter)
+                    .then(eventListeners.delete)
+                    .then(eventListeners.edit)
 
             } else {
-                window.alert("You better type that again ya ding-dong.")
-                return
+
+                const journalDate = document.querySelector("#journalDate")
+                const concepts = document.querySelector("#concepts")
+                const journalEntry = document.querySelector("#journalEntry")
+                const mood = document.querySelector("#mood")
+
+                const regex = /[^a-z0-9\s\(\)\{\}\:\;\.]/i
+
+                if (!regex.test(journalEntry.value) && journalEntry.value && !regex.test(concepts.value) && concepts.value) {
+                    const newJournalEntry = {
+                        "date": journalDate.value,
+                        "concept": concepts.value,
+                        "entry": journalEntry.value,
+                        "mood": mood.value
+                    }
+
+                    data.saveJournalEntry(newJournalEntry)
+                        .then(data.getJournalEntries)
+                        .then(entriesDOM.renderJournalEntries)
+
+                } else {
+                    window.alert("You better type that again ya ding-dong.")
+                    return
+                }
             }
         })
     },
@@ -95,30 +112,7 @@ const eventListeners = {
                 data.updateEntry(entryID)
             }
         })
-        // const saveButton = document.querySelector("#recordEntry")
-
-        // saveButton.addEventListener("click", event => {
-
-        //     const hiddenEntryID = document.querySelector("#hiddenID")
-
-        //     if (hiddenEntryID !== "") {
-
-        //         editEntry(entryID)
-
-        //     }
-
-
-
-        },
-    // save() {bu
-    //     const hiddenID = document.querySelector("#hiddenEntryID")
-
-    //     saveButton.addEventListener("click", event => {
-    //         if hiddenID.value <> "" {
-    //             saveNewEntry()
-    //         }
-    //     })
-    // }
+    }
 }
 
 export default eventListeners

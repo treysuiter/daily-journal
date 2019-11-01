@@ -42,9 +42,26 @@ const API = {
             })
     },
     editEntry(entryID) {
-        return fetch(`http://localhost:8088/entries/${entryID}`)
+    
+        const updatedObject = {
+            date: document.querySelector("#journalDate").value,
+            concept: document.querySelector("#concepts").value,
+            entry: document.querySelector("#journalEntry").value,
+            mood: document.querySelector("#mood").value
+        }
+        return fetch(`http://localhost:8088/entries/${entryID}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(updatedObject)
+
+        })
+            .then(response => response.json())
+            .then(() => {
+                document.querySelector("#hiddenID").value = ""
+            })
+
     }
-
 }
-
 export default API
