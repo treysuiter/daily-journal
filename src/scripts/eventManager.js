@@ -8,13 +8,11 @@ const eventListeners = {
 
         const saveButton = document.querySelector("#recordEntry")
 
+        let hiddenEntryID = document.querySelector("#hiddenID")
+
         saveButton.addEventListener("click", () => {
 
-            const hiddenEntryID = document.querySelector("#hiddenID")
-
-            console.log(hiddenEntryID.value)
-
-            if (hiddenEntryID !== "") {
+            if (hiddenEntryID.value) {
 
                 data.editEntry(hiddenEntryID.value)
                     .then(data.getJournalEntries)

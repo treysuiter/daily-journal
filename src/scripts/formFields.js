@@ -7,7 +7,7 @@ export default {
         document.querySelector(".mainContainer").innerHTML = /*html*/`
         <h1 class="mx-auto">Daily Journal</h1>
         <form class=" bs4-d-flex flex-column mx-auto bd-highlight mb-3 w-50 p-3" action="">
-        <input id="hiddenID" value="" />
+        <input id="hiddenID" value="">
             <fieldset>
                 <label for "journalDate">Date of Entry</label>
                 <input class="form-control" type="date" name="journalDate" id="journalDate">

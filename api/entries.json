@@ -2,42 +2,21 @@
   "entries": [
     {
       "date": "2019-11-02",
-      "concept": "CHANGE IT",
-      "entry": "CHANGE IT PLS",
+      "concept": "CHANGED",
+      "entry": "CHANGED ???",
       "mood": "medium",
       "id": 72
     },
     {
       "date": "",
-      "concept": "",
-      "entry": "adfvadfv",
+      "concept": "heyoooooo",
+      "entry": "somw stuffokokokokok",
       "mood": "maximum",
       "id": 87
     },
     {
       "date": "",
-      "concept": "",
-      "entry": "adfvadfv",
-      "mood": "maximum",
-      "id": 88
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "adfvadfv",
-      "mood": "maximum",
-      "id": 89
-    },
-    {
-      "date": "",
-      "concept": "same",
-      "entry": "same",
-      "mood": "maximum",
-      "id": 90
-    },
-    {
-      "date": "",
-      "concept": "&",
+      "concept": "update",
       "entry": "&",
       "mood": "maximum",
       "id": 91
@@ -202,6 +181,20 @@
       "entry": "22",
       "mood": "minimum",
       "id": 116
+    },
+    {
+      "date": "2019-11-06",
+      "concept": "yup",
+      "entry": "nope",
+      "mood": "maximum",
+      "id": 117
+    },
+    {
+      "date": "2019-11-06",
+      "concept": "TEST123",
+      "entry": "TEST456",
+      "mood": "maximum",
+      "id": 118
     }
   ]
 }
