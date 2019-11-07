@@ -13,6 +13,7 @@ data.getJournalEntries()
 .then(entriesDOM.renderJournalEntries)
 .then(eventListeners.recordEntry)
 .then(eventListeners.moodFilter)
+.then(eventListeners.searchEntires)
 .then(eventListeners.delete)
 .then(eventListeners.edit)
 

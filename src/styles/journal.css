@@ -99,3 +99,7 @@ h1 {
 fieldset {
     margin: 10px;
 }
+
+#entryLog {
+    justify-content: space-around;
+}

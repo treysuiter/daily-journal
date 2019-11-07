@@ -46,8 +46,20 @@ export default {
                 <input type="radio" name="moods" id="minimum" value="minimum">
                 <label for "maximum">MIN</label>
 
-                </div>  
+                </div>
+
             </fieldset>
+
+            <fieldset class="searchField">
+
+                <legend>
+                Search for Entries
+                </legend>
+
+                <input class="form-control" type="text" name="searchField" id="searchField">
+
+            </fieldset>
+                
 
         </form>
         <article class="d-flex flex-wrap" id="entryLog">

@@ -1,200 +1,32 @@
 {
   "entries": [
     {
-      "date": "2019-11-02",
-      "concept": "CHANGED",
-      "entry": "CHANGED ???",
-      "mood": "medium",
-      "id": 72
-    },
-    {
-      "date": "",
-      "concept": "heyoooooo",
-      "entry": "somw stuffokokokokok",
-      "mood": "maximum",
-      "id": 87
-    },
-    {
-      "date": "",
-      "concept": "update",
-      "entry": "&",
-      "mood": "maximum",
-      "id": 91
-    },
-    {
-      "date": "",
-      "concept": ">",
-      "entry": ">",
-      "mood": "maximum",
-      "id": 92
-    },
-    {
-      "date": "",
-      "concept": ">",
-      "entry": ">",
-      "mood": "maximum",
-      "id": 93
-    },
-    {
-      "date": "",
-      "concept": ">",
-      "entry": ">",
-      "mood": "maximum",
-      "id": 94
-    },
-    {
-      "date": "",
-      "concept": ">",
-      "entry": ">",
-      "mood": "maximum",
-      "id": 95
-    },
-    {
-      "date": "2019-10-03",
-      "concept": "yup",
-      "entry": "yup",
-      "mood": "maximum",
-      "id": 96
-    },
-    {
-      "date": "2019-10-03",
-      "concept": "&",
-      "entry": "h",
-      "mood": "maximum",
-      "id": 97
-    },
-    {
-      "date": "2019-10-03",
-      "concept": "h",
-      "entry": "&",
-      "mood": "maximum",
-      "id": 98
-    },
-    {
-      "date": "2019-10-03",
-      "concept": "&",
-      "entry": "",
-      "mood": "maximum",
-      "id": 99
-    },
-    {
-      "date": "2019-10-03",
-      "concept": "&",
-      "entry": "h",
-      "mood": "maximum",
-      "id": 100
-    },
-    {
-      "date": "2019-10-03",
-      "concept": "&",
-      "entry": "h",
-      "mood": "maximum",
-      "id": 102
-    },
-    {
-      "date": "",
-      "concept": "h",
-      "entry": "h",
-      "mood": "maximum",
-      "id": 103
-    },
-    {
-      "date": "",
-      "concept": "g",
-      "entry": "g",
-      "mood": "maximum",
-      "id": 104
-    },
-    {
-      "date": "",
-      "concept": "",
-      "entry": "sdvsadvds",
-      "mood": "maximum",
-      "id": 105
-    },
-    {
-      "date": "2019-10-01",
-      "concept": "sDvafvdfv",
-      "entry": "yeahyeahyea",
-      "mood": "maximum",
-      "id": 106
-    },
-    {
-      "date": "2019-10-31",
-      "concept": "haloween",
-      "entry": "bishop looks like a ding dong",
-      "mood": "maximum",
-      "id": 107
-    },
-    {
-      "date": "2019-10-31",
-      "concept": "haloween",
-      "entry": "bishop looks like a ding dong",
-      "mood": "minimum",
-      "id": 108
-    },
-    {
-      "date": "2019-10-31",
-      "concept": "haloween",
-      "entry": "bishop looks like a ding dong",
-      "mood": "minimum",
-      "id": 109
-    },
-    {
-      "date": "",
-      "concept": "is this broken",
-      "entry": "who knows",
-      "mood": "medium",
-      "id": 110
-    },
-    {
-      "date": "2019-11-02",
-      "concept": "will this be a new number",
-      "entry": "will see",
-      "mood": "minimum",
-      "id": 112
-    },
-    {
-      "date": "2019-11-24",
-      "concept": "deleting things",
-      "entry": "i did it",
-      "mood": "maximum",
-      "id": 113
-    },
-    {
-      "date": "2019-11-02",
-      "concept": "new entry",
-      "entry": "just cuz",
-      "mood": "minimum",
-      "id": 114
-    },
-    {
-      "date": "2019-11-14",
-      "concept": "new for 14",
-      "entry": "yup",
-      "mood": "maximum",
-      "id": 115
-    },
-    {
-      "date": "2019-11-02",
-      "concept": "22",
-      "entry": "22",
-      "mood": "minimum",
-      "id": 116
-    },
-    {
-      "date": "2019-11-06",
-      "concept": "yup",
-      "entry": "nope",
+      "date": "2019-11-01",
+      "concept": "Laser Warfare",
+      "entry": "Survived laser warfare",
       "mood": "maximum",
       "id": 117
     },
     {
-      "date": "2019-11-06",
-      "concept": "TEST123",
-      "entry": "TEST456",
-      "mood": "maximum",
+      "date": "2019-11-02",
+      "concept": "Muppet impersonation",
+      "entry": "learned to talk like grover",
+      "mood": "medium",
       "id": 118
+    },
+    {
+      "date": "2019-11-03",
+      "concept": "Pentatonic licks grover",
+      "entry": "Hot shredding",
+      "mood": "medium",
+      "id": 119
+    },
+    {
+      "date": "2019-11-04",
+      "concept": "Cat entertainment",
+      "entry": "high on nip",
+      "mood": "medium",
+      "id": 120
     }
   ]
 }

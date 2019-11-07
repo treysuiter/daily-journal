@@ -61,20 +61,21 @@ const eventListeners = {
 
                 const myMood = event.target.value
 
-                data.getJournalEntries().then(response => {
+                data.getJournalEntries()
+                    .then(response => {
 
-                    const newArray = response.filter(selectedMood => {
+                        const newArray = response.filter(selectedMood => {
 
-                        let match = false
+                            let match = false
 
-                        if (selectedMood.mood === myMood) {
-                            match = true
-                        }
-                        return match
+                            if (selectedMood.mood === myMood) {
+                                match = true
+                            }
+                            return match
+                        })
+                        entriesDOM.renderJournalEntries(newArray)
+
                     })
-                    entriesDOM.renderJournalEntries(newArray)
-
-                })
             }))
     },
 
@@ -110,7 +111,44 @@ const eventListeners = {
                 data.updateEntry(entryID)
             }
         })
+    },
+
+    //Creates an event listener for search field
+
+    searchEntires() {
+
+        const searchField = document.querySelector("#searchField")
+
+        searchField.addEventListener("keyup", event => {
+
+            let enterKey = event.which || event.keyCode
+
+            if (enterKey === 13) {
+
+                const mySearch = event.target.value
+
+                data.getJournalEntries()
+
+
+                    .then(response => {
+                        const newArray = []
+                        response.forEach(entry => {
+                            for (let value of Object.values(entry)) {
+                                let testString = value.toString()
+                                if (testString.includes(mySearch)) {
+                                    newArray.push(entry)
+                                    break
+                                }
+                            }
+
+                        })
+                        entriesDOM.renderJournalEntries(newArray)
+                    })
+
+
+            }
+        }
+        )
     }
 }
-
 export default eventListeners
